@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, staticFile } from "remotion";
-import { GalleryHorizontal, Send } from "lucide-react";
-import { siClaude, siInstagram, siShopify } from "simple-icons";
+import { Bot, GalleryHorizontal, Send } from "lucide-react";
+import { siInstagram, siShopify } from "simple-icons";
 import { C, F } from "../theme";
 import { BrandIcon, Captions, Sfx } from "../ui/core";
 import { ChatScreen, IPhone, Msg, Photo, PromoArt } from "../ui/phone";
@@ -159,7 +159,7 @@ export const InstagramVideo: React.FC = () => (
               title="From DM to answer, without waiting."
               nodes={[
                 { icon: <BrandIcon icon={siInstagram} size={72} />, label: "A DM arrives on any of 4 accounts" },
-                { icon: <BrandIcon icon={siClaude} size={72} />, label: "Claude AI agent reads it" },
+                { icon: <Bot size={66} color={C.maroon} />, label: "AI agent reads it" },
                 { icon: <BrandIcon icon={siShopify} size={72} />, label: "Checks Shopify orders & products" },
                 { icon: <GalleryHorizontal size={64} color={C.maroon} />, label: "Builds a photo carousel" },
                 { icon: <Send size={60} color={C.maroon} />, label: "Replies in the DM" },

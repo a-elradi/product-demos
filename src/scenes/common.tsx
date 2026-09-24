@@ -1,8 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
-import { siClaude, siN8n } from "simple-icons";
 import { C, F } from "../theme";
-import { BrandIcon, Eyebrow, Reveal, Words, clamp, ease, useSpr, Wordmark } from "../ui/core";
+import { Eyebrow, Reveal, Words, clamp, ease, useSpr, Wordmark } from "../ui/core";
 import { Logo } from "../ui/phone";
 
 // Thin concentric rings, borrowed from the dashboard's sign-in panel.
@@ -295,29 +294,6 @@ export const Flow: React.FC<{ title: string; nodes: FlowNode[]; chips: string[] 
         </div>
       </AbsoluteFill>
     </Maroon>
-  );
-};
-
-export const PoweredBy: React.FC<{ color?: string; at?: number }> = ({ color = "#fff", at = 0 }) => {
-  const f = useCurrentFrame();
-  const p = ease(f, at, at + 14);
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: 16,
-        fontFamily: F.ui,
-        fontWeight: 600,
-        fontSize: 22,
-        color,
-        opacity: p * 0.9,
-      }}
-    >
-      Built on <BrandIcon icon={siN8n} size={26} color={color} /> n8n
-      <span style={{ opacity: 0.5 }}>·</span>
-      Powered by <BrandIcon icon={siClaude} size={26} color={color} /> Claude
-    </div>
   );
 };
 

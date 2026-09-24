@@ -122,7 +122,7 @@ const Login: React.FC = () => {
           <div style={{ ...btn(true), justifyContent: "center", transform: f >= D.signIn && f < D.signIn + 4 ? "translateY(1px)" : undefined }}>
             Enter the dashboard
           </div>
-          <div style={{ fontSize: 12, color: C.ink3 }}>Access is also limited by who this page is shared with in Claude.</div>
+          <div style={{ fontSize: 12, color: C.ink3 }}>Access is limited to the GLAM MODA management team.</div>
         </div>
       </div>
     </div>
@@ -389,7 +389,7 @@ export const DashboardBrowser: React.FC = () => {
         <RotateCw size={17} color="#666" />
         <div style={{ flex: 1, height: 34, borderRadius: 17, background: "#F1F0EF", display: "flex", alignItems: "center", gap: 8, padding: "0 16px", fontSize: 15, color: "#333" }}>
           <Lock size={14} color="#666" />
-          claude.ai/artifact/
+
           <span style={{ width: 150, height: 12, borderRadius: 6, background: "#D9D5D2" }} />
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame } from "remotion";
 import {
   Bell,
+  Bot,
   Calendar,
   CircleCheck,
   LayoutTemplate,
@@ -13,7 +14,7 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
-import { siClaude, siShopify } from "simple-icons";
+import { siShopify } from "simple-icons";
 import { C, F } from "../theme";
 import { BrandIcon, Captions, Sfx, TypingSfx, clamp, ease, typed, useSpr } from "../ui/core";
 import { Logo, Photo } from "../ui/phone";
@@ -396,7 +397,7 @@ export const EmailVideo: React.FC = () => (
               title="Every email, handled end to end."
               nodes={[
                 { icon: <OutlookIcon size={76} />, label: "Email lands in Outlook" },
-                { icon: <BrandIcon icon={siClaude} size={72} />, label: "Claude AI agent reads it" },
+                { icon: <Bot size={66} color={C.maroon} />, label: "AI agent reads it" },
                 { icon: <BrandIcon icon={siShopify} size={72} />, label: "Checks Shopify orders & products" },
                 { icon: <LayoutTemplate size={62} color={C.maroon} />, label: "Builds a branded HTML email" },
                 { icon: <Reply size={62} color={C.maroon} />, label: "Replies in the same thread" },

@@ -4,7 +4,7 @@ import { Crown, Send } from "lucide-react";
 import { C, F } from "../theme";
 import { Captions, Eyebrow, Reveal, Sfx, TypingSfx, Words, clamp, ease, typed, useSpr } from "../ui/core";
 import { ChatScreen, IPhone, Logo, Msg, TgButtons } from "../ui/phone";
-import { Maroon, Paper, PoweredBy, Rings, Stage } from "../scenes/common";
+import { Maroon, Paper, Rings, Stage } from "../scenes/common";
 import { ALL, Agent, TEAM, WAZIR } from "./agents";
 import { DashboardBrowser, D } from "./dashboard";
 
@@ -592,8 +592,8 @@ export const WazirOutro: React.FC = () => {
             );
           })}
         </div>
-        <div style={{ marginTop: 50 }}>
-          <PoweredBy at={40} />
+        <div style={{ marginTop: 50, fontFamily: F.ui, fontWeight: 600, fontSize: 24, opacity: ease(f, 40, 54) * 0.9 }}>
+          Reports in Telegram · Live ops dashboard for KW · BH · US
         </div>
       </AbsoluteFill>
     </Maroon>

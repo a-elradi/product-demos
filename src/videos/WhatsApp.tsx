@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, staticFile } from "remotion";
-import { BookOpenCheck, Copy, ExternalLink, Reply, Send } from "lucide-react";
-import { siClaude, siShopify, siWhatsapp } from "simple-icons";
+import { BookOpenCheck, Bot, Copy, ExternalLink, Reply, Send } from "lucide-react";
+import { siShopify, siWhatsapp } from "simple-icons";
 import { C, F } from "../theme";
 import { BrandIcon, Captions, Sfx } from "../ui/core";
 import { ChatScreen, IPhone, Msg, Photo, PromoArt, WaButtons } from "../ui/phone";
@@ -217,7 +217,7 @@ export const WhatsAppVideo: React.FC = () => (
               title="One message in. The right answer out."
               nodes={[
                 { icon: <BrandIcon icon={siWhatsapp} size={72} />, label: "Customer sends a WhatsApp" },
-                { icon: <BrandIcon icon={siClaude} size={72} />, label: "Claude AI agent reads it" },
+                { icon: <Bot size={66} color={C.maroon} />, label: "AI agent reads it" },
                 { icon: <BrandIcon icon={siShopify} size={72} />, label: "Checks Shopify orders & products" },
                 { icon: <BookOpenCheck size={66} color={C.maroon} />, label: "Uses team-approved answers" },
                 { icon: <Send size={60} color={C.maroon} />, label: "Replies with cards & buttons" },
